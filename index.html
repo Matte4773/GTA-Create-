@@ -25,12 +25,12 @@
 	|
 	|
 -->
-<!doctype html>
-<html lang="zh">
-<head>
-	<meta charset="utf-8">
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://matte4773.github.io/RGames-Social-Club-Create-Crews/ -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>自定义帮会徽章 - 哑光</title><meta name="author" content="Flashback-GTA">
+	<title>自定义帮会徽章</title><meta name="author" content="Flashback-GTA">
 	<!-- CSS STYLES START -->
 	<style>
 		html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
@@ -1019,7 +1019,7 @@
 					<div>
 						<fieldset style="border-color: #242424;">
 							<div class="div-image-container">
-								<img id="eh-imgSource"/>
+								<img id="eh-imgSource">
 							</div>
 							<div class="div-status">
 								<span class="status-text" id="eh-lblStatus">没有图像导入</span>
@@ -1041,7 +1041,7 @@
 									256 &nbsp; = &nbsp; 256 x 256 分辨率<br>
 									512 &nbsp; = &nbsp; 512 x 512 分辨率
 								</span></span>
-								调整原图大小
+								调整图片分辨率大小
 							</legend>
 							<div>
 								<label for="eh-opt64" class="l-radio">
@@ -1081,12 +1081,12 @@
 						<fieldset>
 							<legend>
 								<span class="info">🛈<span class="tooltip">
-									在这里选择是否启用平滑图像<br>
+									在这里选择是否启用抗锯齿<br>
 									<br>
-									启用 &nbsp; = &nbsp; 启用平滑图像 &nbsp; (抗锯齿)<br>
-									停用 &nbsp; = &nbsp; 停用平滑图像/锯齿外观
+									启用 &nbsp; = &nbsp; 启用图像平滑 &nbsp; (抗锯齿)<br>
+									停用 &nbsp; = &nbsp; 停用图像平滑/锯齿外观
 								</span></span>
-								调整图片平滑
+								抗锯齿选项
 							</legend>
 							<div>
 								<label for="eh-optOn" class="l-radio">
@@ -1102,21 +1102,21 @@
 						<fieldset>
 							<legend>
 								<span class="info">🛈<span class="tooltip">
-									创建徽标时使用的颜色模式<br>
+									创建徽标时使用的颜色丰富程度<br>
 									<br>
-									低色彩 &nbsp; = &nbsp; 减少部分色彩 &nbsp; (对服务器的负载很小)<br>
-									完整色彩 &nbsp; = &nbsp; 源色彩 &nbsp; (这会让服务器负载更大)
+									低色彩质量 &nbsp; = &nbsp; 减少部分色彩 &nbsp; (对图片大小影响小)<br>
+									丰富的色彩 &nbsp; = &nbsp; 丰富色彩 &nbsp; (对图片大小影响大)
 								</span></span>
-								调整颜色模式
+								颜色丰富程度
 							</legend>
 							<div>
 								<label for="eh-optLow" class="l-radio">
 									<input type="radio" id="eh-optLow" value="low" name="eh-optColour" tabindex="1">
-									<span>低色彩</span>
+									<span>低色彩质量</span>
 								</label>
 								<label for="eh-optFull" class="l-radio">
 									<input type="radio" id="eh-optFull" value="full" name="eh-optColour" tabindex="2" checked="checked">
-									<span>完整色彩</span>
+									<span>丰富的色彩</span>
 								</label>
 							</div>
 						</fieldset>
@@ -1125,7 +1125,7 @@
 								<span class="info">🛈<span class="tooltip">
 									确定徽章创建方法，根据源图片的视觉元素，每一行将导致性能较弱的服务器请求大小。<br>
 									<br>
-									自动 &nbsp; = &nbsp; 自动计算水平和垂直，并选择最小值 &nbsp; (速度会更慢)<br>
+									自动 &nbsp; = &nbsp; 自动计算水平和垂直，并选择较小创建图像的方式 &nbsp; (速度会慢)<br>
 									行 &nbsp; = &nbsp; 水平<br>
 									列 &nbsp; = &nbsp; 垂直<br>
 									<br>
@@ -1151,7 +1151,7 @@
 						<fieldset>
 							<legend>
 								<span class="info">🛈<span class="tooltip">
-									确定用于徽标 SVG 元素的小数位数。<br>
+									用于徽标 SVG 分辨率调整。<br>
 									<br>
 									低 &nbsp; = &nbsp; 3 &nbsp; (推荐)<br>
 									中 &nbsp; = &nbsp; 4<br>
@@ -1159,7 +1159,7 @@
 									<br>
 									仅当有涂装在载具上有明显撕裂（颜色之间有线条）的时候，才建议设置为中或高。
 								</span></span>
-								十进制精度
+								SVG图像的分辨率
 							</legend>
 							<div>
 								<label for="eh-opt3" class="l-radio">
@@ -1176,7 +1176,7 @@
 								</label>
 							</div>
 						</fieldset>
-						<button disabled id="eh-btnProcessImage" type="button" class="clr-inactive btn-wide">创建徽章</button>
+						<button disabled="" id="eh-btnProcessImage" type="button" class="clr-inactive btn-wide">创建徽章</button>
 					</div>
 					
 				</div>
@@ -1203,7 +1203,13 @@
 					</div>
 					<div id="eh-divInfo" class="div-info clr-inactive">⠀</div>
 					<div class="div-support-link">
-						<a href="https://space.bilibili.com/286090636" target="_blank">获取帮助 点击这里私信！在制作之建议您将图片转换为矢量图</a>
+						<a href="https://github.com/Matte4773/RGames-Social-Club-Create-Crews" target="_blank">GayHub</a>
+						<br>
+                        <br>
+						<a href="https://codesandbox.io/s/stoic-dijkstra-1rcll7" target="_blank">CodeSandbox @Flashback GTA</a>
+						<br>
+						<br>
+						<a href="https://www.youtube.com/watch?v=bGI88KDaKmY&t=205s" target="_blank">Youtube @Flashback GTA</a>
 					</div>
 				</div>
 			</div>
@@ -1211,13 +1217,13 @@
 			<!-- RIGHT COLUMN START -->
 			<div class="column right">
 				<div class="column-content">
-					<button disabled id="eh-btnCreateCode" type="button" class="clr-inactive btn-wide">生成代码</button>
+					<button disabled="" id="eh-btnCreateCode" type="button" class="clr-inactive btn-wide">生成代码</button>
 					<textarea id="eh-txtConsoleCode" class="textarea"></textarea>
 					<div class="div-info div-mobile">
 						<strong>手机用户需要注意的事项</strong><br>
 						某些手机将无法复制所有代码，您可能需要一部分一部分的去复制它。
 					</div>
-					<button disabled id="eh-btnCopyCode" type="button" class="clr-inactive btn-wide">复制代码</button>
+					<button disabled="" id="eh-btnCopyCode" type="button" class="clr-inactive btn-wide">复制代码</button>
 				</div>
 			</div>
 			<!-- RIGHT COLUMN END -->
@@ -1360,7 +1366,7 @@
 			{
 				//	The eblem is small enough to upload.
 				setClass('eh-divInfo', 'div-info clr-success');
-				document.getElementById('eh-divInfo').innerHTML = '完成 该大小可以生成:&nbsp;&nbsp;&nbsp; ' + numberWithCommas(EH.encodedLength) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + numberWithCommas(EH.maxEncodedLength);
+				document.getElementById('eh-divInfo').innerHTML = '恭喜 该大小可以生成:&nbsp;&nbsp;&nbsp; ' + numberWithCommas(EH.encodedLength) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + numberWithCommas(EH.maxEncodedLength);
 				//	Enable the Create Code button
 				setClass('eh-btnCreateCode', 'btn-wide clr-primary');
 				enableElement('eh-btnCreateCode');
@@ -1369,7 +1375,7 @@
 			{
 				//	The emblem is too large to upload.
 				setClass('eh-divInfo', 'div-info clr-danger');
-				document.getElementById('eh-divInfo').innerHTML = '图像过大 无法生成:&nbsp;&nbsp;&nbsp; ' + numberWithCommas(EH.encodedLength) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + numberWithCommas(EH.maxEncodedLength);
+				document.getElementById('eh-divInfo').innerHTML = '由于Rockstar 徽章编辑器限制 当前图像过大 无法生成 请调整左边的选项让图像低于1,280,000 当前的大小:&nbsp;&nbsp;&nbsp; ' + numberWithCommas(EH.encodedLength) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + numberWithCommas(EH.maxEncodedLength);
 			}
 			
 		};
@@ -1393,5 +1399,5 @@
 			setTimeout(function () { document.getElementById('eh-btnCopyCode').innerText = '复制代码', setClass('eh-btnCopyCode', 'btn-wide clr-primary') }, 2000);
 		};
 	</script>
-</body>
-</html>
+
+</body></html>
